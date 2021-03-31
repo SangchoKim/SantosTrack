@@ -130,10 +130,12 @@
 ### 알고리즘2: 1부터 n까지의 합을 구하는 알고리즘2
 * <font size=5em>$\frac { n (n + 1) }{ 2 }$</font>
 
-def sum_all(n):
-    return int(n * (n + 1) / 2)
+```python
+  def sum_all(n):
+      return int(n * (n + 1) / 2)
 
-sum_all(100)
+  sum_all(100)
+```
 
 ### 시간 복잡도 구하기
 * 1부터 n까지의 합을 구하는 알고리즘2
