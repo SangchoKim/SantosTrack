@@ -45,4 +45,29 @@ def read_data(data):
         return None
     else:
         return None
+
+
+print (hash('Dave') % 8)
+print (hash('Dd') % 8)
+print (hash('Data') % 8)
+0
+2
+2
+
+save_data('Dd', '1201023010')
+save_data('Data', '3301023010')
+read_data('Dd')
+'1201023010'
+
+
+
+hash_table
+[0,
+ 0,
+ [[1341610532875195530, '1201023010'], [-9031202661634252870, '3301023010']],
+ 0,
+ 0,
+ 0,
+ 0,
+ 0]
 ```
