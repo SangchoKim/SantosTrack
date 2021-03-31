@@ -112,15 +112,15 @@
 * 반복문 안에서 합을 기록할 변수에 1씩 증가된 값을 더함
 * 반복이 끝나면 합을 출력
 
+```python
+    def sum_all(n):
+        total = 0
+        for num in range(1, n + 1):
+            total += num
+        return total
 
-def sum_all(n):
-    total = 0
-    for num in range(1, n + 1):
-        total += num
-    return total
-
-sum_all(100)
-
+    sum_all(100)
+```
 
 ### 시간 복잡도 구하기
 * 1부터 n까지의 합을 구하는 알고리즘1
