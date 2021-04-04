@@ -1,7 +1,7 @@
 # SantosTrack
 
 > This repository is operated for the purpose of containing what has been studied so far
-<font color="red" size="2rem">* If you want to read more, please click on my blog :green_book:</font>
+<span color="red" size="2rem">* If you want to read more, please click on my blog :green_book:</span>
 
 
 ## Index
