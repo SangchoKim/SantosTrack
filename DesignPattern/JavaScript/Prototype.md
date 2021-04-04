@@ -1,21 +1,22 @@
-#Module Pattern
+#Prototype Pattern
 
-> This pattern is the design pattern used to implement the concept of software modules. Module pattern is a powerful pattern and commonly used in JavaScript.
-You can make functions, variables, and properties inside a module as public or private members.
+> It creates new instances of objects by cloning them from a prototype. The main focus of prototype pattern is to create an object used as a blueprint for each object constructor created.
 
 ```javaScript
-var a = (function(){
-  //private variables & methods
-  var privateVar = 'X';
-  //public methods and variables
-  return {
-    getX: function(){
-      return privateVar;
-    }
+var obj = {
+  name: "My object's name.", 
+  objFunc: function () {
+    console.log( "Yay! A function!" );
   }
-})();
+};
 
-a.getX(); //X
+//set a new object/function's prototype as another existing one
+//here newObj is created with prototype as obj.
+var newObj = Object.create( obj );
+newObj.gender = 'Female'; 
+// Now we can see that one is a prototype of the other
+console.log( newObj.name ); //My object's name.
+console.log( newObj.gender ); //Female
 ```
 
 ##### Reference
