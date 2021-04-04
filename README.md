@@ -5,7 +5,7 @@
 <br/>
 
 ## Index
-* [DataStucture](#github.com/SangchoKim/SantosTrack/tree/master/dataStructure)
+* [DataStucture](#../tree/master/dataStructure)
 * [DesignPattern](#github.com/SangchoKim/SantosTrack/tree/master/designPattern)
 
 ## Lisence
