@@ -1,8 +1,8 @@
 # SantosTrack
 
 > This repository is operated for the purpose of containing what has been studied so far
-<font color="red" size="2rem">* If you want to read more, please <a herf="https://sangcho.tistory.com/" >click</a> on my blog :green_book:</font>
-<br/>
+<font color="red" size="2rem">* If you want to read more, please click on my blog :green_book:</font>
+
 
 ## Index
 * [DataStucture](https://github.com/SangchoKim/SantosTrack/tree/master/dataStructure)
