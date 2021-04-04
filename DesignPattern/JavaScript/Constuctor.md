@@ -1,4 +1,4 @@
-#ConstuctorPattern
+#Constuctor Pattern
 
 >You are familiar with constructors as functions that initialize objects with specific properties and methods.
 The constructor pattern is similar to that definition. We use this pattern to create multiple instances of the same object.
