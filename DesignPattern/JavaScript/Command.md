@@ -2,6 +2,7 @@
 
 > The command pattern is a great solution to providing loose coupling. The system should not know much information about each specific payment method processing. 
 To achieve that, this pattern will separate the code that requests an operation from the ones that execute the actual implementation.
+> In object-oriented programming, the command pattern is a behavioral design pattern in which an object is used to encapsulate all information needed to perform an action or trigger an event at a later time.
 
 ```javaScript
 var commandPattern = (function(){
