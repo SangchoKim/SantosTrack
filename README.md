@@ -4,7 +4,7 @@
 
 ## Index
 * [DataStucture](https://github.com/SangchoKim/SantosTrack/tree/master/dataStructure)
-* [DesignPattern](https://github.com/SangchoKim/SantosTrack/tree/master/designPattern)
+* [DesignPattern](https://github.com/SangchoKim/SantosTrack/tree/master/DesignPattern)
 
 ## Lisence
 SantosKim - [wjdrms1919@gmail.com]
