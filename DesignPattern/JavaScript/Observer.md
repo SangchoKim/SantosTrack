@@ -1,6 +1,6 @@
 #Observer Pattern
 
-> It gives you a subscription model where you subscribe to an event and when that event occurs, you will get a notification..
+> It gives you a subscription model where you subscribe to an event and when that event occurs, you will get a notification.
 
 ```javaScript
 
