@@ -47,3 +47,70 @@
 - root 노드의 값이 child node 보다 작을 경우, root 노드의 child node 중 가장 큰 값을 가진 노드와 root 노드 위치를 바꿔주는 작업을 반복함 (swap)
 
 <img src="https://www.fun-coding.org/00_Images/heap_remove.png">
+
+### 4. 힙 구현
+### 힙과 배열
+- 일반적으로 힙 구현시 배열 자료구조를 활용함
+- 배열은 인덱스가 0번부터 시작하지만, 힙 구현의 편의를 위해, root 노드 인덱스 번호를 1로 지정하면, 구현이 좀더 수월함
+  - 부모 노드 인덱스 번호 (parent node's index) = 자식 노드 인덱스 번호 (child node's index) // 2
+  - 왼쪽 자식 노드 인덱스 번호 (left child node's index) = 부모 노드 인덱스 번호 (parent node's index) * 2
+  - 오른쪽 자식 노드 인덱스 번호 (right child node's index) = 부모 노드 인덱스 번호 (parent node's index) * 2 + 1
+<img src="https://www.fun-coding.org/00_Images/heap_array.png" width=400>
+
+# 예1 - 10 노드의 부모 노드 인덱스
+```python
+2 // 2
+
+1
+```
+
+# 예1 - 15 노드의 왼쪽 자식 노드 인덱스 번호
+```python
+1 * 2
+
+2
+```
+
+# 예1 - 15 노드의 오른쪽 자식 노드 인덱스 번호
+```python
+2 * 2 + 1
+
+5
+```
+
+### 힙에 데이터 삽입 구현 (Max Heap 예)
+- 힙 클래스 구현1 
+```python
+class Heap:
+    def __init__(self, data):
+        self.heap_array = list()
+        self.heap_array.append(None)
+        self.heap_array.append(data)
+
+heap = Heap(1)
+heap.heap_array
+
+[None, 1]
+```
+
+- 힙 클래스 구현2 - insert1
+  - 인덱스 번호는 1번부터 시작하도록 변경
+
+<img src="https://www.fun-coding.org/00_Images/heap_ordinary.png">
+
+```python
+class Heap:
+    def __init__(self, data):
+        self.heap_array = list()
+        self.heap_array.append(None)
+        self.heap_array.append(data)
+        
+    def insert(self, data):
+        if len(self.heap_array) == 0:
+            self.heap_array.append(None)
+            self.heap_array.append(data)
+            return True
+        
+        self.heap_array.append(data)
+        return True 
+```
