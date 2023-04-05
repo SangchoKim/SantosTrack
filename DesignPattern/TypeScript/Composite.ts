@@ -80,7 +80,7 @@ class Composite extends Component {
     }
 }
 
-function clientCode(component: Component) {
+function compositeClientCode(component: Component) {
     console.log(`RESULT: ${component.operation()}`);
 }
 
@@ -100,7 +100,7 @@ tree.add(branch1);
 tree.add(branch2);
 
 console.log('Client: Now I\'ve got a composite tree:');
-clientCode(tree);
+compositeClientCode(tree);
 
 console.log(audio.onAudio());
 console.log(video.onVedio());
